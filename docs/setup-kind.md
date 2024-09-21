@@ -49,6 +49,7 @@ kind --version
 ## Step 3: Create a Kubernetes Cluster with kind
 
 Create a Kubernetes cluster using kind. This command will create a single-node cluster inside Docker.
+
 ```bash
 kind create cluster
 
@@ -62,6 +63,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 ```
 
 Verify kubectl installation:
+
 ``````bash
 kubectl version --client
 kubectl get nodes
