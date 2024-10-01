@@ -5,8 +5,8 @@ metadata:
 data:
   index.html: |
     <html>
-    <head><title>Hello!</title></head>
+    <head><title>Hi!</title></head>
     <body>
-      <h1>Hello, World! This is a custom message!</h1>
+      <h1>This is an interesting presentation!</h1>
     </body>
     </html>
