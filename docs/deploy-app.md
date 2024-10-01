@@ -10,7 +10,6 @@ You can install Argo CD by applying the official YAML file.
 ```bash
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-
 ```
 
 Use kubectl port-forward to forward the Argo CD server service's port to your local machine.
@@ -33,10 +32,17 @@ kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.pas
 
 ---
 
-## Create the argo-cd app
+## Step 3: Create the argo-cd app
 
 Apply this YAML to create the Argo CD Application:
 
 ```bash
 kubectl apply -f application.yaml
+``` 
+
+## Step 4: Test it
+
+Execute this command to access to the nginx service.
+```bash
+sudo kubectl port-forward --address 0.0.0.0 service/nginx-service 80:80
 ``` 

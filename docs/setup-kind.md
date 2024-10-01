@@ -52,11 +52,13 @@ Create a Kubernetes cluster using kind. This command will create a single-node c
 
 ```bash
 kind create cluster
+```
 
 ## Step 4: Install kubectl
 
 Download the latest kubectl binary and move it to bin directory:
-``````bash
+
+```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
@@ -64,7 +66,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 Verify kubectl installation:
 
-``````bash
+```bash
 kubectl version --client
 kubectl get nodes
 ```
